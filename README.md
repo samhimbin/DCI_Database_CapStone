@@ -23,6 +23,7 @@ Github desktop- an application that enables you to interact with GitHub using a 
 webex - collaborating tool to schedule meetings and discussions.
 
 Google meet - collaborating tool to meetings and discussions.
+https://github.com/samhimbin/DCI_Database_CapStone/blob/main/Tools_used_DBproject.png
 
 ## Design
 Coceptual design: Identifying the objects (or entities) that constitute it and the relationships (operations or associations) between one object and another.It is high level datbase design.
