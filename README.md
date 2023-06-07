@@ -59,9 +59,9 @@ Normalization is a technique by which one can modify the relational schema to re
  Thus, all entities are in 3NF.
 
 ## Usage & Implentation
-The usage of our database is shown below by the examples of how our project can be used. Additional screenshots are attched.
+The usage of our database is shown below by the examples of how our project can be used. Additional screenshots are attached.
 
-For more examples, please refer to the Documentation
+For more examples, please refer to the Queries Documentation
 
 Q: Display the top 10 customers with most number of orders
 
