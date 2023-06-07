@@ -52,24 +52,25 @@ Normalization is a technique by which one can modify the relational schema to re
  
  Thus, all entities are in 3NF.
 
-## Team Members
-
-Himabindu Samayam
-
-Naga Sharada Chamarty
-
 ## Usage & Implentation
 The usage of our database is shown below by the examples of how our project can be used. Additional screenshots are attched.
 
 For more examples, please refer to the Documentation
 
-Q: Get the customers and their order information. The result must include customers who haven’t placed any order.
+Q: Display the top 10 customers with most number of orders
 
 select cust_id as customer_id, count(order_id) as number_of_orders 
 from order_detail group by cust_id order by count(order_id) desc limit 10;
 
 https://github.com/samhimbin/DCI_Database_CapStone/blob/main/query_output_screen.png
 
-Q: Display the top 10 customers with most number of orders
+Q: Get the customers and their order information. The result must include customers who haven’t placed any order.
 
-select count(cust_id) from order_detail group by cust_id order by count(cust_id) desc limit 10;
+select * from order_detail o right join customer c on o.cust_id=c.customer_id;
+https://github.com/samhimbin/DCI_Database_CapStone/blob/main/query_output_screen2.png
+
+## Team Members
+
+Himabindu Samayam
+
+Naga Sharada Chamarty
