@@ -55,6 +55,8 @@ Q: Get the customers and their order information. The result must include custom
 select cust_id as customer_id, count(order_id) as number_of_orders 
 from order_detail group by cust_id order by count(order_id) desc limit 10;
 
+https://github.com/samhimbin/DCI_Database_CapStone/blob/main/query_output_screen.png
+
 Q: Display the top 10 customers with most number of orders
 
 select count(cust_id) from order_detail group by cust_id order by count(cust_id) desc limit 10;
