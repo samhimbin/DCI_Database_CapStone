@@ -52,8 +52,8 @@ For more examples, please refer to the Documentation
 
 Q: Get the customers and their order information. The result must include customers who haven’t placed any order.
 
-select first_name, last_name, order_id, order_date, order_cost, order_status 
-from customer c right join order_detail o on c.customer_id=o.cust_id;
+select cust_id as customer_id, count(order_id) as number_of_orders 
+from order_detail group by cust_id order by count(order_id) desc limit 10;
 
 Q: Display the top 10 customers with most number of orders
 
