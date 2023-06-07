@@ -44,7 +44,7 @@ https://github.com/samhimbin/DCI_Database_CapStone/blob/main/Schema_Relationship
 Normalization:
 Normalization is a technique by which one can modify the relational schema to reduce the redundancy. Each normalization phase adds more relations (tables) into the database.
 
- • First Normal Form (1NF): 1NF also prohibits repeating group of columns such as item1, item2,.., itemN. Instead, you should create another table using one-to-many relationship .  
+ • First Normal Form (1NF): A table is in 1NF if every cell contains a single value, not a list of values.1NF also prohibits repeating group of columns such as item1, item2,.., itemN. Instead, you should create another table using one-to-many relationship .  
  All the entities (CUSTOMER, ORDER, PRODUCT, SHIPMENT) have satisfied 1NF.
  
  • Second Normal Form (2NF): Tables are in 2NF, they confirm to 1NF and every column that is not a primary key of the table is dependent on the whole of the primary key.
