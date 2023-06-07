@@ -39,6 +39,8 @@ The most crucial aspect in designing a relational database is to identify the re
 	one-to-many
 	many-to-many
 
+https://github.com/samhimbin/DCI_Database_CapStone/blob/main/Schema_Relationships.docx
+
 ## Team Members
 
 Himabindu Samayam
