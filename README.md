@@ -41,6 +41,17 @@ The most crucial aspect in designing a relational database is to identify the re
 
 https://github.com/samhimbin/DCI_Database_CapStone/blob/main/Schema_Relationships.docx
 
+Normalization:
+Normalization is a technique by which one can modify the relational schema to reduce the redundancy. Each normalization phase adds more relations (tables) into the database.
+ • First Normal Form (1NF): 1NF also prohibits repeating group of columns such as item1, item2,.., itemN. Instead, you should create another table using one-to-many relationship .  
+ All the entities (CUSTOMER, ORDER, PRODUCT, SHIPMENT) have satisfied 1NF.
+ • Second Normal Form (2NF): Tables are in 2NF, they confirm to 1NF and every column that is not a primary key of the table is dependent on the whole of the primary key.
+ All the entities(CUSTOMER, ORDER, PRODUCT, SHIPMENT) satisfies 2NF.
+ • Third Normal Form (3NF): Tables are in 3NF, if they confirm to 2NF and the non-primary key columns are fully dependent on primary key and nothing else. That is unrelated data is being removed.
+ Customer entity with attributes  – customer_id, first_name, last_name, email, address, state, zipcode. In this, zipcode (non-primary key attribute) is transitively dependent on primary key (customer_id). So, for customer table to be in 3NF, we split the customer table and derive a new table by name city_code table having attributes – city, zip.
+ 
+ Thus, all entities are in 3NF.
+
 ## Team Members
 
 Himabindu Samayam
