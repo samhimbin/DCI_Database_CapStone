@@ -23,6 +23,7 @@ Github desktop- an application that enables you to interact with GitHub using a 
 webex - collaborating tool to schedule meetings and discussions.
 
 Google meet - collaborating tool to meetings and discussions.
+https://github.com/samhimbin/DCI_Database_CapStone/blob/main/Tools_used_DBproject.png
 
 ## Design
 Coceptual design: Identifying the objects (or entities) that constitute it and the relationships (operations or associations) between one object and another.It is high level datbase design.
@@ -51,8 +52,10 @@ For more examples, please refer to the Documentation
 
 Q: Get the customers and their order information. The result must include customers who haven’t placed any order.
 
-select first_name, last_name, order_id, order_date, order_cost, order_status 
-from customer c right join order_detail o on c.customer_id=o.cust_id;
+select cust_id as customer_id, count(order_id) as number_of_orders 
+from order_detail group by cust_id order by count(order_id) desc limit 10;
+
+https://github.com/samhimbin/DCI_Database_CapStone/blob/main/query_output_screen.png
 
 Q: Display the top 10 customers with most number of orders
 
