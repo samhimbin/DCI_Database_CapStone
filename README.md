@@ -61,9 +61,6 @@ Normalization is a technique by which one can modify the relational schema to re
 ## Usage & Implentation
 The usage of our database is shown below by the examples of how our project can be used. Additional screenshots are attached.
 
-For more examples, please refer to the Queries Documentation
-https://github.com/samhimbin/DCI_Database_CapStone/tree/main/SQL_QUERIES
-
 Q: Display the top 10 customers with most number of orders
 
 select cust_id as customer_id, count(order_id) as number_of_orders 
@@ -75,6 +72,9 @@ Q: Get the customers and their order information. The result must include custom
 
 select * from order_detail o right join customer c on o.cust_id=c.customer_id;
 https://github.com/samhimbin/DCI_Database_CapStone/blob/main/query_output_screen2.png
+
+For more examples, please refer to the Queries Documentation
+https://github.com/samhimbin/DCI_Database_CapStone/tree/main/SQL_QUERIES
 
 ## Team Members
 
