@@ -62,6 +62,7 @@ Normalization is a technique by which one can modify the relational schema to re
 The usage of our database is shown below by the examples of how our project can be used. Additional screenshots are attached.
 
 For more examples, please refer to the Queries Documentation
+https://github.com/samhimbin/DCI_Database_CapStone/tree/main/SQL_QUERIES
 
 Q: Display the top 10 customers with most number of orders
 
